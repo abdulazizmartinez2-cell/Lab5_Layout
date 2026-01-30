@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sw">
 <head>
     <meta charset="UTF-8">
-    <title>Lab 5 | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - System Layout</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Hii ni kwa ajili ya kuhakikisha muonekano unakaa sawa haraka */
+        body {
+            padding-top: 50px;
+            background-color: #f8f9fa;
+        }
+        .login-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
-<body class="login-body">
+<body>
 
-    <div class="login-container">
-        <h2>WELCOME TO THE SYSTEM RESULT</h2>
-   <form class="login-form" onsubmit="return loginUser()">
-    <h4 style="margin-bottom: 10px; color: #7f8c8d;">LOGIN</h4>
-    <label>Username/Email:</label><br>
-    <input type="text" id="username" placeholder="Username / Email" required><br>
-    <label>Password:</label><br>
-    <input type="password" id="password" placeholder="Password" required><br>
-    <button type="submit" class="login-btn">LOGIN</button>
-    </form>
+    <div class="container">
+        <div class="login-container text-center">
+            <h2 class="mb-4">WELCOME TO THE SYSTEM RESULT</h2>
+            
+            <form>
+                <div class="form-group text-left">
+                    <label for="username">Username/Email:</label>
+                    <input type="text" class="form-control" id="username" placeholder="Ingiza jina lako">
+                </div>
+                
+                <div class="form-group text-left mt-3">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="********">
+                </div>
 
-    <script>
-       function loginUser() {
-    // hamna validation, ni redirect tu
-       window.location.href = "../dashboard/dashboard.html/dashboard.html";
-       return false;
-     }
-    </script>
+                <button type="submit" class="btn btn-primary btn-block mt-4">LOGIN</button>
+            </form>
 
-        <p style="margin-top: 20px; font-size: 0.8rem;">MARTINEZ @2026</p>
+            <div class="mt-4">
+                <p>MARTINEZ @2026</p>
+                <a href="logout.html" class="text-danger">OUT</a>
+            </div>
+        </div>
     </div>
 
-    <!-- Bootstrap JS -->
-<script src="js/bootstrap.bundle.min.js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
-<a href="../allocation.html">OUT</a>
-
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
