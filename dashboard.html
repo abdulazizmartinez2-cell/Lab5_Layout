@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Lab 5 System</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Change Password</a></li>
+                        <li><a class="dropdown-item" href="#">Change Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container mt-4">
+
+    <h3 class="mb-4">Dashboard</h3>
+
+    <div class="row">
+
+        <div class="col-md-3 mb-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Users</h5>
+                    <p class="card-text">Manage system users</p>
+                    <a href="manage-users.html" class="btn btn-primary btn-sm">Open</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Students</h5>
+                    <p class="card-text">Manage students</p>
+                    <a href="manage-students.html" class="btn btn-success btn-sm">Open</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Courses</h5>
+                    <p class="card-text">Manage courses</p>
+                    <a href="manage-courses.html" class="btn btn-warning btn-sm">Open</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Results</h5>
+                    <p class="card-text">Manage results</p>
+                    <a href="manage-results.html" class="btn btn-danger btn-sm">Open</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="../js/bootstrap.bundle.min.js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

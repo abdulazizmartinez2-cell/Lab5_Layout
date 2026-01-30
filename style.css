@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+table {
+    background-color: #fff;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.login-body {
+    height: 100vh;
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 35px 30px;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #2980b9;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 35px 30px;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}

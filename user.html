@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Users</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="dashboard.html">Lab 5 System</a>
+        <a class="btn btn-outline-light btn-sm" href="dashboard.html">Back</a>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4>Manage Users</h4>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUserModal">
+            Add New User
+        </button>
+    </div>
+
+    <!-- USERS TABLE -->
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>#</th>
+                <th>Username</th>
+                <th>Role</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>admin</td>
+                <td>Administrator</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>john</td>
+                <td>Instructor</td>
+                <td>Active</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+<!-- ADD USER MODAL -->
+<div class="modal fade" id="addUserModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Add New User</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <form>
+
+                    <div class="mb-3">
+                        <label class="form-label">Username</label>
+                        <input type="text" class="form-control" placeholder="Enter username">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" placeholder="Enter password">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Role</label>
+                        <select class="form-control">
+                            <option>Administrator</option>
+                            <option>Instructor</option>
+                            <option>Student</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button class="btn btn-success">Save User</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="../js/bootstrap.bundle.min.js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
