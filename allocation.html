@@ -1,116 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sw">
 <head>
     <meta charset="UTF-8">
-    <title>Course Allocation</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/Bootstrap.min.css/bootstrap.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allocation - Lab 5</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="dashboard.html">System Allocation</a>
+        </div>
+    </nav>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="dashboard.html">Lab 5 System</a>
-        <a class="btn btn-outline-light btn-sm" href="dashboard.html">Back</a>
-    </div>
-</nav>
-
-<!-- MAIN CONTENT -->
-<div class="container mt-4">
-
-    <div class="d-flex justify-content-between align-items-center mb-3">
-        <h4>Course Allocation</h4>
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#allocateCourseModal">
-            Allocate Course
-        </button>
-    </div>
-
-    <!-- ALLOCATION TABLE -->
-    <table class="table table-bordered table-striped">
-        <thead class="table-dark">
-            <tr>
-                <th>#</th>
-                <th>Instructor</th>
-                <th>Course</th>
-                <th>Semester</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Mr. John</td>
-                <td>CS101 - Introduction to Programming</td>
-                <td>Semester 1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Ms. Anna</td>
-                <td>IT202 - Database Systems</td>
-                <td>Semester 2</td>
-            </tr>
-        </tbody>
-    </table>
-
-</div>
-
-<!-- ALLOCATE COURSE MODAL -->
-<div class="modal fade" id="allocateCourseModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title">Allocate Course to Instructor</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body">
-                <form>
-
-                    <div class="mb-3">
-                        <label class="form-label">Instructor</label>
-                        <select class="form-control">
-                            <option>Mr. John</option>
-                            <option>Ms. Anna</option>
-                            <option>Mr. Peter</option>
-                        </select>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow">
+                    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Usimamizi wa Mgawanyo (Allocations)</h5>
+                        <button class="btn btn-sm btn-success">Add New Allocation</button>
                     </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Course</label>
-                        <select class="form-control">
-                            <option>CS101 - Introduction to Programming</option>
-                            <option>IT202 - Database Systems</option>
-                        </select>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <thead class="bg-light">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Mwanafunzi</th>
+                                        <th>Kozi Iliyopangwa</th>
+                                        <th>Chumba/Darasa</th>
+                                        <th>Hali (Status)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Abdulaziz Martinez</td>
+                                        <td>Computer Science</td>
+                                        <td>Lab 05</td>
+                                        <td><span class="badge badge-success">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>John Doe</td>
+                                        <td>Information Technology</td>
+                                        <td>Room 12</td>
+                                        <td><span class="badge badge-warning">Pending</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Semester</label>
-                        <select class="form-control">
-                            <option>Semester 1</option>
-                            <option>Semester 2</option>
-                        </select>
+                    <div class="card-footer text-muted">
+                        <a href="dashboard.html" class="btn btn-outline-secondary btn-sm">Rudi Nyuma</a>
                     </div>
-
-                </form>
+                </div>
             </div>
-
-            <div class="modal-footer">
-                <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button class="btn btn-success">Allocate</button>
-            </div>
-
         </div>
     </div>
-</div>
 
-<!-- Bootstrap JS -->
-<script src="../js/bootstrap.bundle.min.js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
-
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,60 +1,22 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+    margin-top: 10%;
+    border-top: 5px solid #007bff;
 }
 
 .card {
-    border-radius: 10px;
-    border: 1px solid #ddd;
+    transition: transform 0.2s;
 }
 
-.navbar {
-    padding: 10px;
+.card:hover {
+    transform: scale(1.05);
 }
 
-table {
-    background-color: #fff;
-}
-
-h4 {
+.navbar-brand {
     font-weight: bold;
-}
-
-.login-body {
-    height: 100vh;
-    background: linear-gradient(135deg, #2980b9, #6dd5fa);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.login-container {
-    background: #ffffff;
-    padding: 35px 30px;
-    width: 100%;
-    max-width: 380px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-
-.login-btn {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    background: #2980b9;
-    color: #fff;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.login-container {
-    background: #ffffff;
-    padding: 35px 30px;
-    width: 100%;
-    max-width: 380px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    letter-spacing: 1px;
 }

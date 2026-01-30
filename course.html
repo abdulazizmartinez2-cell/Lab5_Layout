@@ -1,105 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sw">
 <head>
     <meta charset="UTF-8">
-    <title>Manage Courses</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href=../"css/bootstrap.min.css/bootstrap.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kozi - Lab 5</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <a class="navbar-brand container" href="dashboard.html">Management ya Kozi</a>
+    </nav>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="dashboard.html">Lab 5 System</a>
-        <a class="btn btn-outline-light btn-sm" href="dashboard.html">Back</a>
-    </div>
-</nav>
-
-<!-- MAIN CONTENT -->
-<div class="container mt-4">
-
-    <div class="d-flex justify-content-between align-items-center mb-3">
-        <h4>Manage Courses</h4>
-        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCourseModal">
-            Add Course
-        </button>
-    </div>
-
-    <!-- COURSES TABLE -->
-    <table class="table table-bordered table-striped">
-        <thead class="table-dark">
-            <tr>
-                <th>#</th>
-                <th>Course Code</th>
-                <th>Course Name</th>
-                <th>Credits</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>CS101</td>
-                <td>Introduction to Programming</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>IT202</td>
-                <td>Database Systems</td>
-                <td>4</td>
-            </tr>
-        </tbody>
-    </table>
-
-</div>
-
-<!-- ADD COURSE MODAL -->
-<div class="modal fade" id="addCourseModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title">Add New Course</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body">
-                <form>
-
-                    <div class="mb-3">
-                        <label class="form-label">Course Code</label>
-                        <input type="text" class="form-control" placeholder="Enter course code">
+    <div class="container">
+        <h2 class="text-center mb-4">Orodha ya Kozi</h2>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Web Development</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">WD-101</div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Course Name</label>
-                        <input type="text" class="form-control" placeholder="Enter course name">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Credits</label>
-                        <input type="number" class="form-control" placeholder="Enter credits">
-                    </div>
-
-                </form>
+                </div>
             </div>
-
-            <div class="modal-footer">
-                <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button class="btn btn-success">Save Course</button>
+            <div class="col-md-6 mb-3">
+                <div class="card border-left-success shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col mr-2">
+                                <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Database Systems</div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">DS-202</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
+        </div>
+        <div class="text-center mt-4">
+            <a href="dashboard.html" class="btn btn-outline-primary">Rudi Kwenye Menu</a>
         </div>
     </div>
-</div>
-
-<!-- Bootstrap JS -->
-<script src="../js/bootstrap.bundle.min.js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
